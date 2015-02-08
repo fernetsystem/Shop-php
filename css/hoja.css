@@ -1,6 +1,13 @@
 *{
 	font-family: verdana;
 }
+body {
+    background-image: url(../img/123.jpg);
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
 #carrito{
 	background: black;
 	color: red;
