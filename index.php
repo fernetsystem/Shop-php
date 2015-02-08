@@ -5,7 +5,7 @@
 	  $resultado = mysql_query($query,$conexion);
 	  while($fila = mysql_fetch_array($resultado)){
 	  	echo "<article>";
-	  	echo "<a href='producto.php?id=".$fila['id']."'>
+	  	echo "<a href='prenda.php?id=".$fila['id']."'>
 	  			<h3>".$fila['nombre']."</h3>
 	  		  </a>";
 	  	echo "<p>".$fila['descripcion']."</p>";
@@ -16,7 +16,7 @@
 	  		echo "<img src='photo/".$fila2['imagen']."' width=100px>";
 	  	}
 	  	echo "<br/>";
-	  	echo "<a href='producto.php?id=".$fila['id']."'><button>Más información</button></a>";
+	  	echo "<a href='prenda.php?id=".$fila['id']."'><button>Más información</button></a>";
 	  	echo "<button>Comprar ahora</button>";
 	  	echo "</article>";
 	  }
