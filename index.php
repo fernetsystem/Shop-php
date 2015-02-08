@@ -11,7 +11,7 @@
 	  	$query2 = "select * from img where idprenda=".$fila['id']." limit 1";
 	  	$resultado2 = mysql_query($query2,$conexion);
 	  	while($fila2 = mysql_fetch_array($resultado2)){
-	  		echo "<img src='photo/".$fila2['imagen']."'>";
+	  		echo "<img src='photo/".$fila2['imagen']."' width=100px>";
 	  	}
 	  	echo "</article>";
 	  }
