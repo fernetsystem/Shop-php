@@ -13,6 +13,9 @@
 	  	while($fila2 = mysql_fetch_array($resultado2)){
 	  		echo "<img src='photo/".$fila2['imagen']."' width=100px>";
 	  	}
+	  	echo "<br/>";
+	  	echo "<a href='producto.php?id=".$fila['id']."'><button>Mas informacion</button></a>";
+	  	echo "<button>Comprar ahora</button>";
 	  	echo "</article>";
 	  }
 	  mysql_close($conexion);
