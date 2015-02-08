@@ -1,3 +1,9 @@
+<?php 
+	session_start(); //iniciar las variables de secion
+	if(!isset($_SESSION['contador'])){ //si la variable de secion no existe el contador vale cero
+		$_SESSION['contador'] = 0;
+	}
+ ?>
 <!DOCTYPE html>
 <html>
 	<head>
