@@ -21,5 +21,6 @@
 		</header>
 			<div id="carrito">
 				Carrito
-			</div>
+			</div><br/>
 			<a href="php/destruir.php"><button>Vaciar carrito</button></a>
+			<a href="confirmar.php"><button>Confirmar compra</button></a>
