@@ -1,5 +1,5 @@
 <?php 
-	session_start(); //iniciar las variables de secion
+	session_start(); //abrir secion
 	if(!isset($_SESSION['contador'])){ //si la variable de secion no existe el contador vale cero
 		$_SESSION['contador'] = 0;
 	}
@@ -22,3 +22,4 @@
 			<div id="carrito">
 				Carrito
 			</div>
+			<a href="php/destruir.php"><button>Vaciar carrito</button></a>
