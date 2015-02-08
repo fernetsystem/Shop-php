@@ -13,6 +13,6 @@
 			<a href="index.php"><h1>Tienda online</h1></a>
 			<h2>Subtitulo de la tienda</h2>
 		</header>
-			<div class="carro">
+			<div id="carrito">
 				Carrito
 			</div>

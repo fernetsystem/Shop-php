@@ -1,8 +1,7 @@
 *{
 	font-family: verdana;
 }
-.carro{
+#carrito{
 	background: black;
-	color: white;
-		
+	color: red;
 }

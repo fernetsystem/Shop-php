@@ -17,7 +17,7 @@
 	  	}
 	  	echo "<br/>";
 	  	echo "<a href='prenda.php?id=".$fila['id']."'><button>Más información</button></a>";
-	  	echo "<button value='".$fila['id']."'>Comprar ahora</button>";
+	  	echo "<button value='".$fila['id']."' class='botoncompra'>Comprar ahora</button>";
 	  	echo "</article>";
 	  }
 	  mysql_close($conexion);
