@@ -8,6 +8,11 @@
 	  	echo "<h3>".$fila['nombre']."</h3>";
 	  	echo "<p>".$fila['descripcion']."</p>";
 	  	echo "<p> Precio: ".$fila['precio']." $</p>";
+	  	$query2 = "select * from img where idprenda=".$fila['id']." limit 1";
+	  	$resultado2 = mysql_query($query2,$conexion);
+	  	while($fila2 = mysql_fetch_array($resultado2)){
+	  		echo "<img src='photo/".$fila2['imagen']."'>";
+	  	}
 	  	echo "</article>";
 	  }
 	  mysql_close($conexion);
