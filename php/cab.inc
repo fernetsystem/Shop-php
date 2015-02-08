@@ -9,5 +9,5 @@
 
 	<body>
 		<header>
-			<h1>Tienda online</h1>
+			<a href="index.php"></a><h1>Tienda online</h1></a>
 		</header>
