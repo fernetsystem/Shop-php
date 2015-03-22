@@ -25,6 +25,15 @@
 			#insertar en ventas gracias al idpedido obtenido y reutilizar el id producto del carrito de compras 
 			$q="insert into ventas values(NULL,".$_SESSION['idpedido'].",".$_SESSION['producto'][$i].",1)";
 			$resultado =  mysql_query($q,$conexion);
+			#Logic para descontar productos
+			#obtener el id del producto descontado
+			$q="select * from prendas where id=".$_SESSION['producto'][$i];
+			$resultado = mysql_query($q,$conexion);
+			while ($fila=mysql_fetch_array($resultado)) {
+				$existencia = $fila['existencia']; #Crear atributo e igualarla con el atributo de la base de datos
+				$q2 = "update prendas set existencia =".($existencia-1)." where id = ".$_SESSION['producto'][$i];
+				$resultado2 = mysql_query($q2,$conexion);
+			}
 		}
 		echo "<br/>Tú compra se ha realizado exitosamente <br/> Redireccionando en 5 segundos... ";
 		session_destroy();# Vaciar el carrito

@@ -16,7 +16,7 @@
 
 	<body>
 		<header>
-			<a href="index.php"><h1>Tienda online</h1></a>
+			<a href="index1_1.php"><h1>Tienda online</h1></a>
 			<h2>Subtitulo de la tienda</h2>
 		</header>
 			<div id="carrito">

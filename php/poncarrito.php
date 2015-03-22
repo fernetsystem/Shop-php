@@ -19,5 +19,6 @@
 	}		
 	echo "<tr><td>Subtotal</td><td>".number_format($suma,2)."</td></tr>";
 	echo "</table>";
+	
 	mysql_close($conexion);
  ?>

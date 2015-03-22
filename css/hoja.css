@@ -2,14 +2,36 @@
 	font-family: verdana;
 }
 body {
-    background-image: url(../img/123.jpg);
+    background-image: url(../img/prueba1.png);
     background-repeat: no-repeat;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
 }
+a:link{
+	text-decoration: none;
+	color: white;
+}
+a:visited{
+	text-decoration: none;
+	color: rgb(100,145,0);
+}
+p,h1{
+	color: white;
+}
+button{
+	color: white;
+	border:solid 0px;
+	width: 200px;
+	height: 30px;
+	background-color: rgb(100,145,0);
+}
 #carrito{
 /*	background: black;*/
+	position: absolute;
+	left: 500px;
+	top:100px;
+	width: 300px;
 	color: rgb(222,222,222);
 	border-radius: 4px;
 	box-shadow: 1px 2px 5px #000;
@@ -24,4 +46,4 @@ background: -ms-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); 
 background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
 
-}
+}		
