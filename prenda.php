@@ -16,8 +16,9 @@
 	  		echo "<img src='photo/".$fila2['imagen']."' width=100px>";
 	  	}
 	  	echo "<br/>";
-	  	echo "<a href='producto.php?id=".$fila['id']."'><button>Más información</button></a>";
-	  	echo "<button>Comprar ahora</button>";
+	  	#echo "<a href='producto.php?id=".$fila['id']."'><button>Más información</button></a>";
+	  	#echo "<button>Comprar ahora</button>";
+	  	echo "<button value='".$fila['id']."' class='botoncompra'>Comprar ahora</button>";
 	  	echo "</article>";
 	  }
 	  mysql_close($conexion);
