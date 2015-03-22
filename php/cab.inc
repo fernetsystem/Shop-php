@@ -19,8 +19,10 @@
 			<a href="index1_1.php"><h1>Tienda online</h1></a>
 			<h2>Subtitulo de la tienda</h2>
 		</header>
+			<div id="contieneCarrito">
 			<div id="carrito">
 				Carrito
 			</div><br/>
-			<a href="php/destruir.php"><button>Vaciar carrito</button></a>
-			<a href="confirmar.php"><button>Confirmar compra</button></a>
+			<a href="php/destruir.php" ><button style="width=200">Vaciar carrito</button></a>
+			<a href="confirmar.php"><button style="width=200">Confirmar compra</button></a>
+			</div>
