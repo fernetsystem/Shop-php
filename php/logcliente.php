@@ -1,5 +1,6 @@
 <?php 
 	include "cab.inc";
+	echo '<link rel="stylesheet" type="text/css" href="../css/hoja.css">';
 	$contador = 0;
 	$conexion = mysql_connect("localhost","root","w9w9dorotea");
 	mysql_select_db("tienda_online",$conexion);
@@ -37,11 +38,11 @@
 		}
 		echo "<br/>Tú compra se ha realizado exitosamente <br/> Redireccionando en 5 segundos... ";
 		session_destroy();# Vaciar el carrito
-		echo '<meta http-equiv="refresh" content="5; url=../index.php"';
+		echo '<meta http-equiv="refresh" content="5; url=../index1_1.php"';
 	}else{
 		echo "El usuario NO existe volviendo a la pagina en 5 segundos...";
 		echo '<meta http-equiv="refresh" content="5; url=../confirmar.php"';
 	}
 	mysql_close($conexion);
-	include "pie.inc";
+	
 ?>
