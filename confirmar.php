@@ -1,8 +1,11 @@
 <?php include "php/cab.inc"; ?>
 <p>Ya eres usuario?</p>
-<form action="php/logcliente.php" method="POST">
+<form action="php/logcliente.php" method="POST" class="formClientLogin">
+<p>Usuario</p><br/>
 <input type="text" name="usuario" placeholder="Ingresa tu usuario"/>
+<p>Password</p><br/>
 <input type="password" name="password" placeholder="Ingresa tu contraseña"/>
+<br/><br/><br/>
 <!--<input type="tel" name="t" placeholder="Telefono"/><br/>
 <input type="number" min="10" max="100"/><br/>
 <input type="range" step="10" min="1" max="100"/> <br/>

@@ -1,5 +1,5 @@
 <?php include "php/cab.inc"; ?>
-<form action="php/insertCli.php" method="POST">
+<form action="php/insertCli.php" method="POST" class="formClientLogin">
 	<input type="text" name="usua" placeholder="Cree un NICK" /><br/>
 	<input type="password" name="pass" placeholder="Ingrese nuevo password" /><br/>
 	<input type="text" name="nomb" placeholder="Nombre" /><br/>
