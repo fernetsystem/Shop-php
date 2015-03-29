@@ -22,6 +22,7 @@
 	  	#echo "<button>Comprar ahora</button>";
 	  	echo "<button value='".$fila['id']."' class='botoncompra prendaButt'>Comprar ahora</button>";
 	  	echo "</article>";
+	  	echo "<br/>";
 	  }
 	  mysql_close($conexion);
  ?>
